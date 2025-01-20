@@ -1,0 +1,11 @@
+.App {
+  background-image: url("/lake-house-winter-snow-forrest.jpg"); /* No "/public" part */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
