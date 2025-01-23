@@ -1,11 +1,43 @@
+/* Reset margins and padding */
+body, html {
+  margin: 0;
+  height: 100%; /* Ensure full viewport height */
+}
+
 .App {
-  background-image: url("/lake-house-winter-snow-forrest.jpg"); /* No "/public" part */
+  background-image: url("/lake-house-winter-snow-forrest.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
   align-items: center;
+  justify-content: center;
   color: white;
   font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 20px; /* Space between menu items */
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
+  padding: 10px 20px;
+  border-radius: 8px; /* Rounded corners */
+  position: absolute; /* Positioned at the top */
+  top: 20px; /* Spacing from the top */
+}
+
+.menu-item {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-item:hover {
+  color: #ffcc00; /* Highlight color on hover */
+  transform: scale(1.1); /* Zoom effect */
 }

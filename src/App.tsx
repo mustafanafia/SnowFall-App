@@ -1,4 +1,3 @@
-import React from "react";
 import Snowfall from "react-snowfall";
 import "./App.css";
 
@@ -16,6 +15,13 @@ function App() {
           height: "100vh",
         }}
       />
+      {/* Horizontal Menu */}
+      <div className="menu">
+        <div className="menu-item">Home</div>
+        <div className="menu-item">About</div>
+        <div className="menu-item">Services</div>
+        <div className="menu-item">Contact</div>
+      </div>
     </div>
   );
 }
